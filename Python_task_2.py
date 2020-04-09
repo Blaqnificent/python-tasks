@@ -45,16 +45,25 @@ while program_status:
         else:
             print ("Enter a password with at least 7 characters below: ")
             usr_choice = input()
+<<<<<<< HEAD
 
             while len(usr_choice) < 7: #Keeps asking the user to enter a password till the length is 7 characters or longer
                 print ("Your password is less than 7 characters. Choose a longer password: ")
                 usr_choice =input()
                 
+=======
+            while len(usr_choice) < 7: #Keeps asking the user to enter a password till the length is 7 characters or longer
+                print ("Your password is less than 7 characters. Choose a longer password: ")
+                usr_choice =input()
+>>>>>>> 0881d1d6457275556d6819b8f72cff1a5ab9a5e8
             if len(usr_choice) >= 7: #If paasword is longer than 7, add to the other user's details
                 user_deets_entry.append(usr_choice)
                 container.append(user_deets_entry)
                 password_loop = False #Breaks out of the password check loop
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0881d1d6457275556d6819b8f72cff1a5ab9a5e8
     new_usr_choice = input ("Would you like to enter a new user? Enter 'yes' or 'no': ")
     new_usr_choice = new_usr_choice.lower() #Ensures's user's choice is always lowercase. 
 
